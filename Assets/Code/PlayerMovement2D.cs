@@ -4,25 +4,28 @@ using UnityEngine;
 
 public class PlayerMovement2D : MonoBehaviour
 {
+    //walking
     private float horizontalInput;
     public float currentSpeed;
     public float maxWalkSpeed;
     public float accelerationRate;
     public Rigidbody2D rb;
-    public bool readyToJump = true;
+    
+    //technical
     public GameObject player;
     public LayerMask whatIsGround; 
     public bool grounded;
     public bool isRunningCoroutine = false;
+
+    //jumps
     public float jumpForce;
     public float CoyoteTime = 0.2f; // Time allowed to jump after
-    // Start is called before the first frame update
+
     void Start()
     {
         horizontalInput = 0f;
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
-        readyToJump = true;
     }
 
     // Update is called once per frame
@@ -34,7 +37,7 @@ public class PlayerMovement2D : MonoBehaviour
     void LateUpdate()
     {
         // Cast downward to determine whether the player is grounded.
-        if (Physics.Raycast(transform.localPosition, -transform.up, 1f, whatIsGround))
+        if (Physics2D.Raycast(player.transform.position, new Vector2(0, -1), 0.7f, whatIsGround))
         {
             grounded = true;
         }
@@ -50,10 +53,9 @@ public class PlayerMovement2D : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (readyToJump && grounded)
+            if (grounded)
             {
                 Jump();
-                readyToJump = false;
             }
         }
 
@@ -84,7 +86,6 @@ public class PlayerMovement2D : MonoBehaviour
         // Reset vertical velocity before jumping for consistent height.
         rb.velocity = new Vector2(rb.velocity.x, 0f);
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-        readyToJump = true;
     }
     
     IEnumerator CoyoteJump()
@@ -92,7 +93,6 @@ public class PlayerMovement2D : MonoBehaviour
         yield return new WaitForSeconds(CoyoteTime);
         grounded = false;
         isRunningCoroutine = false;
-        readyToJump = false;                   // Allow jump again after coyote time.
     }
 
     public void Moving()

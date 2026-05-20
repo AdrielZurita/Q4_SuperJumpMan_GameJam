@@ -16,6 +16,8 @@ public class PlayerMovement2D : MonoBehaviour
     public LayerMask whatIsGround; 
     public bool grounded;
     public bool isRunningCoroutine = false;
+    public float playerHeight = 0.7f;
+    
 
     //jumps
     public float jumpForce;
@@ -37,7 +39,7 @@ public class PlayerMovement2D : MonoBehaviour
     void LateUpdate()
     {
         // Cast downward to determine whether the player is grounded.
-        if (Physics2D.Raycast(player.transform.position, new Vector2(0, -1), 0.7f, whatIsGround))
+        if (Physics2D.Raycast(player.transform.position, new Vector2(0, -1), playerHeight, whatIsGround))
         {
             grounded = true;
         }

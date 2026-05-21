@@ -17,7 +17,7 @@ public class PlayerMovement2D : MonoBehaviour
     public bool grounded;
     public bool isRunningCoroutine = false;
     public float playerHeight = 0.7f;
-    
+    public Animator animator;
 
     //jumps
     public float jumpForce;
@@ -33,6 +33,7 @@ public class PlayerMovement2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("Grounded", grounded);
         MoveInputs();
     }
 
@@ -61,13 +62,16 @@ public class PlayerMovement2D : MonoBehaviour
             }
         }
 
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if (horizontalInput != 0)
         {
+            transform.localScale = new Vector3(horizontalInput, 1f, 1f);
+            animator.SetBool("Moving", true);
             if (currentSpeed < 1f) currentSpeed = 1f;
             currentSpeed += accelerationRate * Time.deltaTime;
             currentSpeed = Mathf.Clamp(currentSpeed, 0, maxWalkSpeed);
+
         }
         else
         {
@@ -79,6 +83,7 @@ public class PlayerMovement2D : MonoBehaviour
             {
                 currentSpeed = 0f; // Prevents speed from being negative
             }
+            animator.SetBool("Moving", false);
         }
         transform.Translate(Vector2.right * horizontalInput * currentSpeed * Time.deltaTime);
     }

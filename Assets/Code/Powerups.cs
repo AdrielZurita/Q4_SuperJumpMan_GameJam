@@ -6,6 +6,7 @@ public class Powerups : MonoBehaviour
 {
     public int powerupType = 1; // 0 = none, 1 = big, 2 = fire
     public bool movingHorizontally = false;
+    public Animator playerAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class Powerups : MonoBehaviour
             if (playerPowerups != null)
             {
                 playerPowerups.powerupType = powerupType;
+                playerAnimator.SetTrigger("PoweredUpBig");
                 Destroy(gameObject);
             }
         }

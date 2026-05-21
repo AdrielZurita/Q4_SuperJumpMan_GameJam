@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerPowerups : MonoBehaviour
 {
     public int powerupType = 0; // 0 = none, 1 = big, 2 = fire
     public PlayerMovement2D playerMovement;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,14 +20,13 @@ public class PlayerPowerups : MonoBehaviour
         switch (powerupType)
         {
             case 0:
-                transform.localScale = new Vector3(1f, 1f, 1f);
-                playerMovement.playerHeight = 0.7f;
+                animator.SetInteger("PowerUpType", 0);
                 break;
             case 1:
-                transform.localScale = new Vector3(2f, 2f, 1f);
-                playerMovement.playerHeight = 1.2f;
+                animator.SetInteger("PowerUpType", 1);
                 break;
             case 2:
+                // animator.SetInteger("PowerUpType", 2);
                 // Implement fire powerup behavior here.
                 break;
         }

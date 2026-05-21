@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 6300896816787530224}
   - component: {fileID: 3591537159906501197}
   - component: {fileID: 142704787301735207}
+  - component: {fileID: 4339996672901579327}
   m_Layer: 0
   m_Name: Player Body
   m_TagString: Player
@@ -267,8 +268,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6792453, g: 0.14417945, b: 0.24550878, a: 1}
+  m_Sprite: {fileID: -732104512794416811, guid: a79c384deaaf0b34bb3f93b8d00cb09e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -339,11 +340,11 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.125}
+  m_Offset: {x: 0, y: -0.625}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -373,7 +374,8 @@ MonoBehaviour:
     m_Bits: 256
   grounded: 0
   isRunningCoroutine: 0
-  playerHeight: 0.7
+  playerHeight: 1.2
+  animator: {fileID: 4339996672901579327}
   jumpForce: 10
   CoyoteTime: 0.2
 --- !u!114 &142704787301735207
@@ -390,3 +392,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupType: 0
   playerMovement: {fileID: 3591537159906501197}
+  animator: {fileID: 4339996672901579327}
+--- !u!95 &4339996672901579327
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020023797874384611}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5ded0d58d70ba842b942791b7103936, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &236780234 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4739039149440337131, guid: 20fdbfbf49fc70b4fa5f94e9623b4f9d, type: 3}
-  m_PrefabInstance: {fileID: 1057477738}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &361320645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 861686740565453705, guid: f09b12949c266e8458532957788e95e1, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1788127016}
     - target: {fileID: 3175508372180572530, guid: f09b12949c266e8458532957788e95e1, type: 3}
       propertyPath: m_Name
       value: PowerUp 1
@@ -326,10 +325,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2773157648212618796, guid: 20fdbfbf49fc70b4fa5f94e9623b4f9d, type: 3}
-      propertyPath: player_cam
-      value: 
-      objectReference: {fileID: 236780234}
     - target: {fileID: 5667335067097491002, guid: 20fdbfbf49fc70b4fa5f94e9623b4f9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -658,6 +653,11 @@ Transform:
   - {fileID: 1685361211}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1788127016 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4339996672901579327, guid: 20fdbfbf49fc70b4fa5f94e9623b4f9d, type: 3}
+  m_PrefabInstance: {fileID: 1057477738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1870503669
 GameObject:
   m_ObjectHideFlags: 0

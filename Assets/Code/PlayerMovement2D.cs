@@ -77,7 +77,7 @@ public class PlayerMovement2D : MonoBehaviour
         {
             if (currentSpeed > 0f)
             {
-                currentSpeed -= ( 3f * currentSpeed + 2f ) * Time.deltaTime; // slows player when not moving
+                currentSpeed -= ( 3f * currentSpeed) * Time.deltaTime; // slows player when not moving
             }
             else if (currentSpeed < 0.1f)
             {

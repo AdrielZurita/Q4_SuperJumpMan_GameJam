@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5667335067097491002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 3975580508791562887}
   - component: {fileID: 6588305213844431233}
   - component: {fileID: 2773157648212618796}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5141339527808268700}
   - component: {fileID: 7491157635825551607}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera Point
   m_TagString: CamPoint
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 3591537159906501197}
   - component: {fileID: 142704787301735207}
   - component: {fileID: 4339996672901579327}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player Body
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -393,6 +393,8 @@ MonoBehaviour:
   powerupType: 0
   playerMovement: {fileID: 3591537159906501197}
   animator: {fileID: 4339996672901579327}
+  invincible: 0
+  invincibilityDuration: 0.8
 --- !u!95 &4339996672901579327
 Animator:
   serializedVersion: 7

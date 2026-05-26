@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 493583252, guid: 568e3e22f8427094fa5c0c7b8ac179e4, type: 3}
+  m_Sprite: {fileID: -1603291472181913768, guid: 397f76b9cead992429c13710f06ccaf1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerupType: 1
-  movingHorizontally: 1
   playerAnimator: {fileID: 0}
 --- !u!61 &3722774929027248667
 BoxCollider2D:
@@ -175,7 +174,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.625, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -224,8 +223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseSpeed: 3
   direction: 1
-  jankCompenstation: 0.9
+  jankCompenstation: 0
   whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  whatIsPlayer:
     serializedVersion: 2
     m_Bits: 256
   thisObject: {fileID: 5986287065878714181}

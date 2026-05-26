@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: a79c384deaaf0b34bb3f93b8d00cb09e
+guid: 397f76b9cead992429c13710f06ccaf1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -732104512794416811
-    second: dino walk-Sheet_0
-  - first:
-      213: 8516450424539922931
-    second: dino walk-Sheet_1
-  - first:
-      213: -6724042964363677699
-    second: dino walk-Sheet_2
-  - first:
-      213: 5009821969702708916
-    second: dino walk-Sheet_3
+      213: -1603291472181913768
+    second: New Piskel (3)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,85 +100,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dino walk-Sheet_0
+      name: New Piskel (3)_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 16
-        height: 32
+        width: 10
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 559ad6013da07d5f0800000000000000
-      internalID: -732104512794416811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dino walk-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f14dedf982803670800000000000000
-      internalID: 8516450424539922931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dino walk-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dff63a6ac866fa2a0800000000000000
-      internalID: -6724042964363677699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dino walk-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b6e31cc986768540800000000000000
-      internalID: 5009821969702708916
+      spriteID: 8571f2196e6ffb9e0800000000000000
+      internalID: -1603291472181913768
       vertices: []
       indices: 
       edges: []
@@ -195,7 +123,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 155a59d5ab096614eb0defb25997410c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -203,10 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dino walk-Sheet_0: -732104512794416811
-      dino walk-Sheet_1: 8516450424539922931
-      dino walk-Sheet_2: -6724042964363677699
-      dino walk-Sheet_3: 5009821969702708916
+      New Piskel (3)_0: -1603291472181913768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

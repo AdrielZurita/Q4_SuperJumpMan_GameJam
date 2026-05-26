@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDamage : MonoBehaviour
+public class DeathPlane : MonoBehaviour
 {
-    public GameObject top;
-    public GameObject self;
     public PlayerPowerups playerPowerups;
+
     // Start is called before the first frame update
     void Start()
     {
-        playerPowerups = FindObjectOfType<PlayerPowerups>();
+        playerPowerups = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerPowerups>();
     }
 
     // Update is called once per frame
@@ -19,17 +18,11 @@ public class EnemyDamage : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playerPowerups.Damaged();
+            playerPowerups.death();
         }
-    }
-    
-    public void DestroyEnemy()
-    {
-        Destroy(top);
-        Destroy(self);
     }
 }

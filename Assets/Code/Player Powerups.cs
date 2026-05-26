@@ -44,7 +44,7 @@ public class PlayerPowerups : MonoBehaviour
     }
 
 
-    void death()
+    public void death()
     {
         //play animation
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

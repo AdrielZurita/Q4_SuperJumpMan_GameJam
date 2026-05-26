@@ -9,6 +9,7 @@ public class Flag : MonoBehaviour
 {
     public Animator animator;
     public string levelToLoad;
+    public float loadTime = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +27,14 @@ public class Flag : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             animator.SetTrigger("FlagTouched");
-            SceneManager.LoadScene(levelToLoad);
-            print("Level Loaded: " + levelToLoad);
+            StartCoroutine(LoadLevelAfterDelay(loadTime)); // Adjust the delay as needed
         }
+    }
+
+    IEnumerator LoadLevelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(levelToLoad);
+        print("Level Loaded: " + levelToLoad);
     }
 }

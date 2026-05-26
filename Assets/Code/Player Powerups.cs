@@ -11,11 +11,6 @@ public class PlayerPowerups : MonoBehaviour
     public Animator animator;
     public bool invincible = false;
     public float invincibilityDuration = 0.8f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -23,7 +18,7 @@ public class PlayerPowerups : MonoBehaviour
         switch (powerupType)
         {
             case -1:
-                //death();
+                death();
                 break;
             case 0:
                 animator.SetInteger("PowerUpType", 0);
@@ -37,6 +32,17 @@ public class PlayerPowerups : MonoBehaviour
                 break;
         }
     }
+
+    public void Damaged()
+    {
+        if (!invincible)
+        {
+            powerupType -= 1;
+            animator.SetTrigger("Damaged");
+            Iframes();
+        }
+    }
+
 
     void death()
     {
@@ -58,4 +64,5 @@ public class PlayerPowerups : MonoBehaviour
         yield return new WaitForSeconds(invincibilityDuration); // Adjust duration as needed
         invincible = false;
     }
+
 }

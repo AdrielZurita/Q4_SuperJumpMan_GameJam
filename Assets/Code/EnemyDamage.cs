@@ -23,11 +23,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (!playerPowerups.invincible)
-            {
-                playerPowerups.powerupType -= 1;
-                playerPowerups.Iframes();
-            }
+            playerPowerups.Damaged();
         }
     }
     

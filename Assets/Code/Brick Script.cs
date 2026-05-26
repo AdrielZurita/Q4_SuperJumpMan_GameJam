@@ -7,16 +7,12 @@ public class BrickScript : MonoBehaviour
     public bool isBreakable = true;
     public GameObject parentBrick;
     public GameObject powerupPrefab;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
     {
-        
+        animator.SetBool("IsBreakable", isBreakable);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -28,14 +24,25 @@ public class BrickScript : MonoBehaviour
                 PlayerPowerups playerPowerups = other.gameObject.GetComponent<PlayerPowerups>();
                 if (playerPowerups.powerupType != 0)
                 {
-                    Destroy(parentBrick);
-                    Destroy(gameObject);
+                    animator.SetBool("Hit", true);
+                    StartCoroutine(DestroyBrick());
                 }
             }
             else
             {
-                Instantiate(powerupPrefab, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                if (animator.GetBool("Hit") == false)
+                {
+                    Instantiate(powerupPrefab, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                    animator.SetBool("Hit", true);
+                }
             }
         }
+    }
+
+    System.Collections.IEnumerator DestroyBrick()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(parentBrick);
+        Destroy(gameObject);
     }
 }

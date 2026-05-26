@@ -9,7 +9,7 @@ public class Powerups : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     // Update is called once per frame

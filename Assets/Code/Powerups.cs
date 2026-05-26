@@ -5,7 +5,6 @@ using UnityEngine;
 public class Powerups : MonoBehaviour
 {
     public int powerupType = 1; // 0 = none, 1 = big, 2 = fire
-    public bool movingHorizontally = false;
     public Animator playerAnimator;
     // Start is called before the first frame update
     void Start()
@@ -16,10 +15,7 @@ public class Powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movingHorizontally)
-        {
-            transform.Translate(Vector2.right * Time.deltaTime);
-        }
+
     }
 
     void OnCollisionEnter2D(Collision2D other)

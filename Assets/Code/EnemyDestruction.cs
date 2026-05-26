@@ -1,14 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Animations;
 
-
-public class Flag : MonoBehaviour
+public class EnemyDestruction : MonoBehaviour
 {
-    public Animator animator;
-    public string levelToLoad;
+    public EnemyDamage enemyDamage;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +21,7 @@ public class Flag : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            animator.SetTrigger("FlagTouched");
-            SceneManager.LoadScene(levelToLoad);
-            print("Level Loaded: " + levelToLoad);
+            enemyDamage.DestroyEnemy();
         }
     }
 }

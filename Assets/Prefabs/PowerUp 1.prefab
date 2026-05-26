@@ -45,7 +45,8 @@ GameObject:
   - component: {fileID: 861686740565453705}
   - component: {fileID: 3722774929027248667}
   - component: {fileID: 5057019091890950781}
-  m_Layer: 8
+  - component: {fileID: 3631319791218868616}
+  m_Layer: 0
   m_Name: Powerup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,3 +210,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3631319791218868616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5986287065878714181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62540328a2728af47aa44dc799fac73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseSpeed: 3
+  direction: 1
+  jankCompenstation: 0.9
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  thisObject: {fileID: 5986287065878714181}

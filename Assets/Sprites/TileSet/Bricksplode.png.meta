@@ -1,10 +1,46 @@
 fileFormatVersion: 2
-guid: 70e136eba6d065a41adcfd87271ddac8
+guid: 0ba814948d4f0714b9cd21cd04f9a911
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3850585060629929452
-    second: background (1)_0
+      213: -4731712565869088406
+    second: Bricksplode_0
+  - first:
+      213: -2732905880483461122
+    second: Bricksplode_1
+  - first:
+      213: 8275049943273606441
+    second: Bricksplode_2
+  - first:
+      213: -1193008734129227232
+    second: Bricksplode_3
+  - first:
+      213: 7958073877963758155
+    second: Bricksplode_4
+  - first:
+      213: -6923342500413961213
+    second: Bricksplode_5
+  - first:
+      213: 5998282977307555294
+    second: Bricksplode_6
+  - first:
+      213: 6326873431015556535
+    second: Bricksplode_7
+  - first:
+      213: -8281688134876900717
+    second: Bricksplode_8
+  - first:
+      213: -1420745073910253307
+    second: Bricksplode_9
+  - first:
+      213: 2120242706878160369
+    second: Bricksplode_10
+  - first:
+      213: -6865603359039315076
+    second: Bricksplode_11
+  - first:
+      213: 3746857987923635510
+    second: Bricksplode_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background (1)_0
+      name: Bricksplode_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 256
-        height: 240
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +150,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cedd54c16b6007530800000000000000
-      internalID: 3850585060629929452
+      spriteID: a61fe14bd74955eb0800000000000000
+      internalID: -4731712565869088406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricksplode_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7053dc494c21ad0800000000000000
+      internalID: -2732905880483461122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricksplode_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d807f8412e6d270800000000000000
+      internalID: 8275049943273606441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricksplode_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02af94c80e4917fe0800000000000000
+      internalID: -1193008734129227232
       vertices: []
       indices: 
       edges: []
@@ -123,7 +222,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 77c690770fe304c44b5562b0f90cd15c
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      background (1)_0: 3850585060629929452
+      Bricksplode_0: -4731712565869088406
+      Bricksplode_1: -2732905880483461122
+      Bricksplode_2: 8275049943273606441
+      Bricksplode_3: -1193008734129227232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

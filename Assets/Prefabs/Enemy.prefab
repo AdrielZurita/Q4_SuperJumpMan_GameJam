@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110797040860592676}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2262343380798424855}
   - component: {fileID: 6595075173510191596}
   - component: {fileID: 1238413090120019552}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Stompin Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 4385921613224665400}
   - component: {fileID: 4649720219698865578}
   - component: {fileID: 7910228233188289126}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
